@@ -1,7 +1,7 @@
 
 const mongoose = require("mongoose");
 
-const connectionURI = "mongodb+srv://yogesh:root@cluster0.obzycwr.mongodb.net/mern-rooms/";
+const connectionURI = "mongodb+srv://yogesh:root@cluster0.obzycwr.mongodb.net/mern-rooms";
 
 mongoose.connect(connectionURI);
 

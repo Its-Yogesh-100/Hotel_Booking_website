@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const roomSchema = mongoose.Schema({
+const roomSchema =  mongoose.Schema({
 
     name :{
         type: String,
@@ -15,7 +15,7 @@ const roomSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    rentperdays :{
+    rentperday :{
         type: Number,
         required: true
     },
