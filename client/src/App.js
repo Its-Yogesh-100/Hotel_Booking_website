@@ -27,7 +27,7 @@ import Navbar from './components/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Import Routes component
 import Homescreen from './screens/Homescreen';
 // import Room from './components/Room';
-
+import Bookingsscreen from './screens/Bookingsscreen';
 function App() {
   return (
     <div className="App">
@@ -35,7 +35,8 @@ function App() {
       <BrowserRouter>
         <Routes> {/* Wrap your Routes in BrowserRouter */}
           <Route path="/home" element={<Homescreen />} /> {/* Use element prop to render component */}
-          {/* <Route path='/rooms' element={} /> {/* Use element prop */}
+          {/* <Route path='/book/:roomid' element={<Bookingsscreen/>}/> */}
+          <Route path='/book/:roomid' Component={Bookingsscreen} /> {/* Use exact component prop to render component */}
         </Routes>
       </BrowserRouter>
     </div>

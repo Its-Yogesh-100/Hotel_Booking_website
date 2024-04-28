@@ -30,7 +30,7 @@ function Homescreen() {
                 {loading ? (<h1>Loading....</h1>) : error ? (<h1>Error</h1>) : (rooms.map(room => {
 
 
-                    return <div className="col-md-9 mt-2">
+                    return <div className="col-md-9 mt-2 ">
                         <Room room={room}/>
                     </div>
                 }))}
