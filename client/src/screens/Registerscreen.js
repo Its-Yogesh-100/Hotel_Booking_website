@@ -1,54 +1,104 @@
-import React ,{useState,useEffect} from 'react'
+// import React, { useState, useEffect } from 'react'
+// import axios from 'axios';
+// function Registerscreen() {
+//   const [name, setname] = useState('')
+//   const [email, setemail] = useState('')
+//   const [password, setpassword] = useState('')
+//   const [cpassword, setcpassword] = useState('')
+
+//   async function register() {
+
+//     if (password === cpassword) {
+
+//       const user = {
+//         name,
+//         email,
+//         password,
+//         cpassword
+//       }
+
+//       // try {
+//       //   const result = await axios.post('/api/users/register', user).data
+
+//       // } catch (error) {
+//       //   console.log(error)
+//       // }
+//       console.log(user)
+//     }
+//     else {
+//       alert('Password not matched')
+//     }
+//   }
+
+
+//   return (
+//     <div>
+//       <div className="rows justify-content-center mt-5 ">
+
+//         <div className="col-md-5">
+
+//           <div className='bs'>
+//             <h1>Register</h1>
+//             <input type="text" className='form-control' placeholder='name'
+//               value={name} onChange={(e) => {setname(e.target.value) }} />
+//             <input type="text" className='form-control' placeholder='email'
+//               value={email} onChange={(e) => { setemail(e.target.value) }} />
+//             <input type="text" className='form-control' placeholder='password'
+//               value={password} onChange={(e) => { setpassword(e.target.value) }} />
+//             <input type="text" className='form-control' placeholder='confirm password'
+//               value={cpassword} onChange={(e) => { setcpassword(e.target.value) }} />
+
+//             <button className='btn btn-primary mt-3' onClick={register}>Register</button>
+//           </div>
+
+//         </div>
+//       </div>
+
+//     </div>
+//   )
+// }
+
+// export default Registerscreen
+
+import React, { useState } from 'react';
+import axios from 'axios';
+import '../index.css'
 
 function Registerscreen() {
-  const [name,setname]=useState('')
-  const [email,setemail]=useState('')
-  const [password,setpassword]=useState('')
-  const [cpassword,setcpassword]=useState('')
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [cpassword, setCpassword] = useState('');
 
-  function register(){
-
-    if(password==cpassword){
-    const user={
-      name,
-      email,
-      password,
-      cpassword,
-    }
-    console.log(user)
-    }
-    else
-    {
-      alert('Password not matched')
+ function register() {
+    if (password === cpassword) {
+      const user = { name, email, password, cpassword };
+      console.log(user);
+      // Make your axios request here
+    } else {
+      alert('Password not matched');
     }
   }
 
-  
   return (
-    <div>
-        <div className="rows justify-content-center mt-5 ">
-
-          <div className="col-md-5">
-
-            <div className='bs'>
-              <h1>Register</h1>
-              <input type="text" className='form-control' placeholder='name'
-              value={name} onChange={(e)=>{setname(e.target.value)}}/>
-              <input type="text" className='form-control' placeholder='email'
-              value={email} onChange={(e)=>{setemail(e.target.value)}}/>
-              <input type="text" className='form-control' placeholder='password'
-              value={password} onChange={(e)=>{setpassword(e.target.value)}}/>
-              <input type="text" className='form-control' placeholder='confirm password'
-              value={cpassword} onChange={(e)=>{setcpassword(e.target.value)}}/>
-
-              <button className='btn btn-primary mt-3' onClick={register}>Register</button>
-            </div>
-
-          </div>
+    <div className="d-flex justify-content-center align-items-center vh-100">
+      <div className="col-md-5">
+        <div className='bs p-4'>
+          <h1 className="text-center mb-4">Register</h1>
+          <input type="text" className='form-control mb-3' placeholder='Name'
+            value={name} onChange={(e) => setName(e.target.value)} />
+          <input type="email" className='form-control mb-3' placeholder='Email'
+            value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input type="password" className='form-control mb-3' placeholder='Password'
+            value={password} onChange={(e) => setPassword(e.target.value)} />
+          <input type="password" className='form-control mb-3' placeholder='Confirm Password'
+            value={cpassword} onChange={(e) => setCpassword(e.target.value)} />
+          <button className='btn btn-primary btn-block' onClick={register}>Register</button>
         </div>
-      
+      </div>
     </div>
-  )
+  );
 }
 
-export default Registerscreen
+export default Registerscreen;
+
