@@ -1,6 +1,18 @@
 import React from 'react'
-function navbar() {
+function Navbar() {
+
+    const user = JSON.parse(localStorage.getItem('currentUser'));
+    function logout() {
+
+        localStorage.removeItem('currentUser');
+        window.location.href='/login'
+
+
+    }
+    
+    
     return (
+
         <div>
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -10,15 +22,33 @@ function navbar() {
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/register">Register</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/login">Login</a>
-                            </li>
-                        
-                         
+                        <ul class="navbar-nav mr-5">
+                            {user ? (<>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        {user.name}
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Bookings</a>
+                                        <a class="dropdown-item" onClick={logout}>Logout</a>
+                                        
+                                    </div>
+                                </div>
+
+                            </>) : (<>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/register">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/login">Login</a>
+                                </li>
+
+
+                            </>)}
+
+
+
                         </ul>
                         {/* <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -33,4 +63,6 @@ function navbar() {
     )
 }
 
-export default navbar
+export default Navbar
+
+

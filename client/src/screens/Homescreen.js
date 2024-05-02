@@ -3,11 +3,21 @@ import axios from "axios";
 import Room from "../components/Room";
 import Loader from "../components/Loader";
 import Error from "../components/Error";
+import 'antd/dist/antd'
+import moment from "moment";
+import { DatePicker, Space } from 'antd';
+
+const { RangePicker } = DatePicker;
+
+
 
 function Homescreen() {
   const [rooms, setRooms] = useState([]);
   const [loading, setloading] = useState();
   const [error, seteroor] = useState();
+  
+  const[fromdate,setfromdate] =useState()
+  const[todate,settodate] = useState()
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,16 +36,34 @@ function Homescreen() {
     fetchData();
   }, []); // Empty dependency array to run the effect only once on mount
 
+  function filterByDate(dates) {
+
+
+    
+    setfromdate(moment(dates[0]).format("DD-MM-YYYY"))
+    setfromdate(moment(dates[1]).format("DD-MM-YYYY"));
+
+  }
   return (
-    <div className="container">
-      <div className="row justify-content-center mt-5 ">
+    <div>
+
+
+    <div className="row mt-5 justify-content-center">
+
+      <div className="col-md-3">
+        <RangePicker format="DD-MM-YYYY" onChange={filterByDate}/>
+
+      </div>
+    </div>
+
+      <div className="row justify-content-center  ">
         {loading ? (
           <Loader/>
         ) : rooms.length>1 ? (
           rooms.map((room) => {
             return (
               <div className="col-md-9 mt-3 ">
-                <Room room={room} />
+                <Room room={room} fromdate={fromdate} todate={todate} />
               </div>
             );
           })
