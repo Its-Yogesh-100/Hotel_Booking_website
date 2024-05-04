@@ -48,7 +48,8 @@ import axios from "axios";
 import Loader from "../components/Loader";
 import Error from "../components/Error";
 import moment from "moment";
-import { format } from 'date-fns';
+import { format, toDate } from 'date-fns';
+
 
 function Bookingscreen({ match }) {
   let { roomid ,fromdate,todate,rentperday} = useParams();
@@ -75,6 +76,7 @@ const totalamount = room ?  totaldays * room.rentperday : 0;
         setloading(true);
         const data = (await axios.post("/api/rooms/getroombyid", { roomid }))
           .data;
+          console.log(data);
         // settotalamount(data.rentperday*totaldays))
         setroom(data);
         setloading(false);
@@ -86,6 +88,33 @@ const totalamount = room ?  totaldays * room.rentperday : 0;
 
     fetchData();
   }, []);
+
+
+ async function bookRoom() {
+
+
+
+    const bookingDetails={
+
+      room,
+      // userid:JSON.parse(localStorage.getItem('currentuser'))._id,
+      fromdate,
+      todate,
+      totalamount,
+      totaldays
+
+
+    }
+
+    try{
+      const result = await axios.post('/api/bookings/bookroom',bookingDetails);
+    }catch (error) {
+    
+     console.error('error in booking')
+    }
+
+
+ }
 
   return (
     <div className="m-5">
@@ -116,12 +145,12 @@ const totalamount = room ?  totaldays * room.rentperday : 0;
                   <hr />
                   <p>Total days ; {totaldays}</p>
                   <p>Rent per day : {room.rentperday}</p>
-                  <p>Total Amount: {totalamount}</p>
+                  <p>Total Amount: {totalamount} /</p>
                 </b>
               </div>
 
               <div style={{ float: "right" }}>
-                <button className="btn btn-primary">Pay Now</button>
+                <button className="btn btn-primary" onClick={bookRoom}>Pay Now</button>
               </div>
             </div>
           </div>
