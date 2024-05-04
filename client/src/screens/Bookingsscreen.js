@@ -51,7 +51,7 @@ import moment from "moment";
 import { format } from 'date-fns';
 
 function Bookingscreen({ match }) {
-  let { roomid ,fromdate,todate} = useParams();
+  let { roomid ,fromdate,todate,rentperday} = useParams();
 
   const [loading, setloading] = useState(true);
   const [error, seterror] = useState();
@@ -62,8 +62,11 @@ function Bookingscreen({ match }) {
   const firstdate = moment(fromdate, 'DD-MM-YYYY')
   const lastdate = moment(todate, 'DD-MM-YYYY')
   const totaldays = moment.duration(lastdate.diff(firstdate)).asDays() 
+//const [totalamount, settotalamount]=useState()
+const totalamount = room ?  totaldays * room.rentperday : 0;
 
-const totalamount=totaldays*room.rentperday
+
+  
 
 
   useEffect(() => {
@@ -72,6 +75,7 @@ const totalamount=totaldays*room.rentperday
         setloading(true);
         const data = (await axios.post("/api/rooms/getroombyid", { roomid }))
           .data;
+        // settotalamount(data.rentperday*totaldays))
         setroom(data);
         setloading(false);
       } catch (error) {
@@ -112,7 +116,7 @@ const totalamount=totaldays*room.rentperday
                   <hr />
                   <p>Total days ; {totaldays}</p>
                   <p>Rent per day : {room.rentperday}</p>
-                  <p>Total Amount</p>
+                  <p>Total Amount: {totalamount}</p>
                 </b>
               </div>
 
