@@ -36,9 +36,9 @@ function Loginscreen() {
 
   
   return (
-    <div>
+    <div className='d-flex justify-content-center align-items-center vh-100' >
       {loading && (<Loader />)}
-        <div className="rows justify-content-center mt-5 ">
+        <div className=" ">
 
           <div className="col-md-5 mt-5">
             {error && (<Error message='Invalid Credentials '/>)}
@@ -58,7 +58,14 @@ function Loginscreen() {
         </div>
       
     </div>
+
+
+    
+    
+
+
   )
 }
 
 export default Loginscreen
+

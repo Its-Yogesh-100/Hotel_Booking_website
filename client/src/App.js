@@ -38,7 +38,7 @@ function App() {
         <Routes> {/* Wrap your Routes in BrowserRouter */}
           <Route path="/home" element={<Homescreen />} /> {/* Use element prop to render component */}
           {/* <Route path='/book/:roomid' element={<Bookingsscreen/>}/> */}
-          <Route path='/book/:roomid' Component={Bookingsscreen} /> {/* Use exact component prop to render component */}
+          <Route path='/book/:roomid/:fromdate/:todate' Component={Bookingsscreen} /> {/* Use exact component prop to render component */}
           <Route path='/register' Component={Registerscreen} />
           <Route path='/login' Component={Loginscreen} />
         </Routes>

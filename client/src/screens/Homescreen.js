@@ -4,7 +4,9 @@ import Room from "../components/Room";
 import Loader from "../components/Loader";
 import Error from "../components/Error";
 import 'antd/dist/antd'
-import moment from "moment";
+import moment from 'moment';
+
+
 import { DatePicker, Space } from 'antd';
 
 const { RangePicker } = DatePicker;
@@ -38,15 +40,13 @@ function Homescreen() {
 
   function filterByDate(dates) {
 
-
-    
-    setfromdate(moment(dates[0]).format("DD-MM-YYYY"))
-    setfromdate(moment(dates[1]).format("DD-MM-YYYY"));
+   
+    setfromdate((dates[0]).format("DD-MM-YYYY"))
+    settodate((dates[1]).format("DD-MM-YYYY"));
 
   }
   return (
     <div>
-
 
     <div className="row mt-5 justify-content-center">
 

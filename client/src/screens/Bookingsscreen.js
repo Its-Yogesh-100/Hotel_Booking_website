@@ -47,13 +47,24 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import Loader from "../components/Loader";
 import Error from "../components/Error";
+import moment from "moment";
+import { format } from 'date-fns';
 
 function Bookingscreen({ match }) {
-  let { roomid } = useParams();
+  let { roomid ,fromdate,todate} = useParams();
 
   const [loading, setloading] = useState(true);
   const [error, seterror] = useState();
   const [room, setroom] = useState();
+
+
+
+  const firstdate = moment(fromdate, 'DD-MM-YYYY')
+  const lastdate = moment(todate, 'DD-MM-YYYY')
+  const totaldays = moment.duration(lastdate.diff(firstdate)).asDays() 
+
+const totalamount=totaldays*room.rentperday
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -75,8 +86,8 @@ function Bookingscreen({ match }) {
   return (
     <div className="m-5">
       {loading ? (
-        <Loader/>
-      ) : room ?  (
+        <Loader />
+      ) : room ? (
         <div>
           <div className="row justify-content-center mt-5 bs">
             <div className="col-md-6">
@@ -85,13 +96,13 @@ function Bookingscreen({ match }) {
             </div>
 
             <div className="col-md-6">
-              <div style={{ textAlign: "right" }}>
+              <div style ={{ textAlign: "right" }}>
                 <h1>Booking Details</h1>
                 <hr />
 
                 <p>Name :</p>
-                <p>from Date :</p>
-                <p>To Date :</p>
+                <p>from Date :{fromdate}</p>
+                <p>To Date :{todate}</p>
                 <p>Max Count :{room.maxcount}</p>
               </div>
 
@@ -99,7 +110,7 @@ function Bookingscreen({ match }) {
                 <b>
                   <h1>Amount</h1>
                   <hr />
-                  <p>Total days ; </p>
+                  <p>Total days ; {totaldays}</p>
                   <p>Rent per day : {room.rentperday}</p>
                   <p>Total Amount</p>
                 </b>
@@ -111,9 +122,9 @@ function Bookingscreen({ match }) {
             </div>
           </div>
         </div>
-      ):(
-        <Error/>
-      ) }
+      ) : (
+        <Error />
+      )}
     </div>
   );
 }
