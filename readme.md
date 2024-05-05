@@ -36,7 +36,23 @@ Images/Screenshots:
 
 Include screenshots or images of your project here to provide a visual representation of Balaji Rooms. This could include screenshots of the homepage, room listings, booking process, admin panel (if available), or any other relevant sections.
 
-[]
+![image](https://github.com/Its-Yogesh-100/Hotel_Booking_website/assets/104625324/3665aba9-278f-4d5e-b260-40041cfadf3a)
+
+![image](https://github.com/Its-Yogesh-100/Hotel_Booking_website/assets/104625324/d6e54c7a-536b-489e-95cb-80a8dd3b1a67)
+
+
+![image](https://github.com/Its-Yogesh-100/Hotel_Booking_website/assets/104625324/fdd85ef5-f510-41ac-9d5d-d2cd695108e3)
+
+![image](https://github.com/Its-Yogesh-100/Hotel_Booking_website/assets/104625324/cd448b80-9c8e-4493-889b-05e8dc92c4f5)
+
+![image](https://github.com/Its-Yogesh-100/Hotel_Booking_website/assets/104625324/42983884-45c6-490c-ade3-a5c52ac0ee46)
+
+![image](https://github.com/Its-Yogesh-100/Hotel_Booking_website/assets/104625324/78d38fe7-bb8c-4d2f-b006-15f1ca84df7f)
+
+![image](https://github.com/Its-Yogesh-100/Hotel_Booking_website/assets/104625324/b6225cac-41ca-4c7b-a25b-cece6a181683)
+
+![image](https://github.com/Its-Yogesh-100/Hotel_Booking_website/assets/104625324/d690c3d1-6472-4695-a517-68061effd650)
+
 
 Installation:
 
