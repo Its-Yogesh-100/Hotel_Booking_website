@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: left;
 }
 
@@ -52,13 +52,21 @@ body {
 /* Room component styles */
 /* Room component styles */
 .room-container {
- 
 
+  border: 1px solid rgb(0, 0, 0);
+
+  z-index: 2;
+
+  background-color: rgb(236, 204, 231) !important;
   display: flex;
+ 
+  justify-content: center;
+  width: 1000px;
   align-items: center;
   margin-bottom: 40px;
   border-radius: 15px;
-  overflow: hidden;
+  
+  /* overflow: hidden; */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -72,17 +80,32 @@ body {
   overflow: hidden;
 }
 
-.smallimg {
 
-  padding: 2px;
+.sk{
+  margin-top: 20px;
   width: 100%;
-  height:50%;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  height:80%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   border-radius: 5px;
  
-  background-size: cover;
+  background-size: 278px 415px;
   transition: transform 0.3s ease;
+  background-repeat: no-repeat;
+
+}
+.smallimg {
+
+ 
+  width: 100%;
+  height:50%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-radius: 5px;
+ 
+  background-size: 278px 415px;
+  transition: transform 0.3s ease;
+  background-repeat: no-repeat;
 
 }
 
@@ -91,17 +114,24 @@ body {
 }
 
 .details-container {
-  background-color: green !important;
-  flex: 0 0 50%;
+  
+  
+  font-size: 10vh;
+  font-weight: bold;
+  z-index: 1;
+  background-color: rgb(236, 204, 231) !important;
+  flex: 10 0 40%;
   background-color: rgb(245, 245, 245);
-  padding: 40px;
+  padding: 20px;
 }
 
 .room-name {
+  background-color: rgb(236, 204, 231) !important;
   font-size: 28px;
   color: #333;
   margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
+  font-size: larger;
 }
 
 .detail {
@@ -129,4 +159,53 @@ body {
 
 
 /* another */
+ 
 
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.kk{
+
+
+
+  font-size: 50px;
+  font-weight: bold;
+
+}
