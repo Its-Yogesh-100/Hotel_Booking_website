@@ -109,6 +109,21 @@ body {
 
 }
 
+.bigimg {
+
+ 
+  width: 100%;
+  height:30%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-radius: 5px;
+ 
+  background-size: 100px 100px;
+  transition: transform 0.3s ease;
+  background-repeat: no-repeat;
+
+}
+
 .smallimg:hover {
   transform: scale(1.05);
 }

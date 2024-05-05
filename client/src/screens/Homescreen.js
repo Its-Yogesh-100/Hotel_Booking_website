@@ -22,6 +22,7 @@ function Homescreen() {
   const[fromdate,setfromdate] =useState()
   const[todate,settodate] = useState()
   const [duplicatehotes, setduplicatehotes] = useState([]);
+  const[duplicaterooms,setduplicaterooms] = useState([]);
   const [searchkey, setsearchkey] = useState('')
   const[type , settype]=useState('all')
 
@@ -31,6 +32,7 @@ function Homescreen() {
         setloading(true);
         const data = (await axios.get("/api/rooms/getallRooms")).data;
         setRooms(data);
+        setduplicaterooms(data);
         setloading(false);
       } catch (error) {
         seteroor(true);
