@@ -79,8 +79,8 @@ function Navbar() {
   }
 
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg">
+    <div >
+      <nav class="navbar navbar-expand-lg m-0">
         <a class="navbar-brand" href="/">
           Balaji Rooms
         </a>

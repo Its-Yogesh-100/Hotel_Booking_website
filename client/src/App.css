@@ -16,12 +16,12 @@ body {
 /* Room component styles */
 .room-container {
 
-  border: 1px solid rgb(0, 0, 0);
 
   z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   background-color: rgb(236, 204, 231) !important;
-  display: flex;
+  display:flex;
  
   justify-content: center;
   width: 1000px;
@@ -41,6 +41,8 @@ body {
 .image-container {
   flex: 0 0 50%;
   overflow: hidden;
+  margin-right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
 }
 
 
@@ -190,4 +192,15 @@ body {
 
 
 /* for particle background */
+
+.ck{
+  background-color: rgb(93, 36, 26);;
+}
+
+
+input[type="text"],select{
+
+  font-size: 20px;
+  font-weight: bold;
+}
 

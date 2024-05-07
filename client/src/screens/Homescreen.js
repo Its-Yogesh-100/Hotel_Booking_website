@@ -77,17 +77,17 @@ function Homescreen() {
 
   return (
     
-    <div className="mt-5">
+    <div className="ck mt-0 mb-5">
        
-    <div className="container">
-    <div className="row mt-5 justify-content-center bs">
+    <div className=" mt-20">
+    <div className=" row pt-2 mt-1 justify-content-center bs "style={{backgroundColor:"tomato",position:""}}>
 
-      <div className="col-md-3 mt-2">
-        <RangePicker format="DD-MM-YYYY" onChange={filterByDate}/>
+      <div className="col-md-3 mt-2 wwe" >
+        <RangePicker format="DD-MM-YYYY" onChange={filterByDate} className='range-picker'  />
 
       </div>
 
-      <div className="col-md-3 mb-2 mt-2 justify-content-center">
+      <div className=" ww col-md-3 mb-2 mt-2 justify-content-center">
       <input
               type="text"
               className="form-control i2 m-2"
@@ -108,7 +108,7 @@ function Homescreen() {
       
     </div>
 
-       <div className="row justify-content-center  ">
+       <div className="  container   " >
         {loading ? (
           <Loader/>
         ) : rooms.length>1 ? (
