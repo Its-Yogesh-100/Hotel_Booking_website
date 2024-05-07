@@ -65,13 +65,13 @@ function Loginscreen() {
     // </div>
 
     
-    <div className="d-flex justify-content-center align-items-center vh-100">
+    <div className="d-flex justify-content-center align-items-center vh-100 pp">
       
       <div className="col-md-5">
       {error && (<Error message='Invalid Credentials '/>)}
-        <div className='bs p-4'>
+        <div className='bs p-4 pk'>
         {loading && (<Loader />)}
-          <h1 className="text-center mb-4">Login</h1>
+          <h1 className="text-center mb-4 ">Login</h1>
           
           <input type="email" className='form-control mb-3' placeholder='Email'
             value={email} onChange={(e) => setemail(e.target.value)} />

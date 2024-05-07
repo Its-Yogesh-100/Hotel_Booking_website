@@ -1,26 +1,4 @@
 
-// import './App.css';
-// import Navbar from './components/Navbar';
-// import {BrowserRouter ,Route, Link} from 'react-router-dom'
-// import Homescreen from './screens/Homescreen';
-
-// function App() {
-//   return (
-//     <div className="App">
-//     <Navbar/>
-
-//     <BrowserRouter>
-
-//   <Route path="/home" exact Component={Homescreen}/>
-
-
-//     </BrowserRouter>
-
-//     </div>
-//   );
-// }
-
-// export default App;
 
 import './App.css';
 import Navbar from './components/Navbar';
@@ -31,6 +9,7 @@ import Bookingsscreen from './screens/Bookingsscreen';
 import Registerscreen from './screens/Registerscreen';
 import Loginscreen from './screens/Loginscreen';
 import Landingscreen from './screens/Landingscreen';
+import ParticleBackground from './screens/ParticleBackground';
 function App() {
   return (
     <div className="App">
@@ -43,6 +22,8 @@ function App() {
           <Route path='/register' Component={Registerscreen} />
           <Route path='/login' Component={Loginscreen} />
           <Route path='/' exact Component={Landingscreen} />
+          <Route path='/p' exact Component={ParticleBackground} />
+
 
         </Routes>
       </BrowserRouter>
