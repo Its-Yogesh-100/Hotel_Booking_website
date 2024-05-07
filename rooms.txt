@@ -1,0 +1,166 @@
+[
+
+
+
+
+{
+  "name": "Hotel Lake View Palace, Bhopal",
+  "imageurls": ["https://rb.gy/zyxrm7","https://rb.gy/gifoxv","https://rb.gy/9ocumr"],
+  "rentperday": 2500,
+  "type": "Delux",
+  "maxcount": 4,
+  "phonenumber": 7894561230,
+  "currentbookings": [],
+  "description": "This elegant hotel offers stunning views of Bhopal Lake. It features spacious rooms with balconies, a swimming pool, a spa, and a multi-cuisine restaurant."
+}
+,
+{
+"name": "Hotel Clarks Inn, Jabalpur",
+"imageurls":["https://shorturl.at/stFGQ","https://shorturl.at/cotB7","https://shorturl.at/jvETZ"],
+"rentperday":2800,
+"type":"Delux",
+"maxcount":3,
+"phonenumber":8123456789,
+"currentbookings":[],
+"description": "Hotel Clarks Inn offers comfortable accommodation with modern amenities."
+},
+
+{
+  "name": "Indore Marriott Hotel, Indore",
+  "imageurls": ["https://rb.gy/hdy7fx","https://rb.gy/h6fbrm","https://t.ly/xGJCZ"],
+  "rentperday": 4200,
+  "type": "Delux",
+  "maxcount": 5,
+  "phonenumber": 7312456789,
+  "currentbookings": [],
+  "description": "This luxurious hotel is located in the heart of Indore city. It offers modern amenities, including a rooftop infinity pool, a fitness center, and a variety of restaurants and bars."
+}
+,
+
+{
+  "name": "Taj Usha Kiran Palace, Gwalior",
+  "imageurls": ["https://t.ly/SYAQ8","https://t.ly/qkdWR","https://t.ly/3M7U6"],
+  "rentperday": 3800,
+  "type": "Delux",
+  "maxcount": 3,
+  "phonenumber": 7509812345,
+  "currentbookings": [],
+  "description": "This heritage hotel is a converted palace, offering a unique blend of history and modern luxury. It features grand architecture, landscaped gardens, and a fine dining restaurant."
+}
+
+
+,
+{
+  "name": "Hanuwante Resort, Jabalpur",
+  "imageurls": ["https://r1imghtlak.mmtcdn.com/4dcb0394d2c911e89ae40242ac110003.jfif?output-quality=75&downsize=*:350&crop=520:350;0,21&output-format=jpg",
+"https://r1imghtlak.mmtcdn.com/4dcb0394d2c911e89ae40242ac110003.jfif?output-quality=75&downsize=*:350&crop=520:350;0,21&output-format=jpg",
+"https://r1imghtlak.mmtcdn.com/4dcb0394d2c911e89ae40242ac110003.jfif?output-quality=75&downsize=*:350&crop=520:350;0,21&output-format=jpg"],
+  "rentperday": 2800,
+  "type": "Non-Delux",
+  "maxcount": 6,
+  "phonenumber": 9876543210,
+  "currentbookings": [],
+  "description": "This family-friendly resort is situated amidst nature, offering a peaceful retreat. It features cottages, a swimming pool, a children's play area, and a restaurant serving local cuisine."
+}
+,
+
+{
+  "name": "Jehan Numa rooms, Bhopal",
+  "imageurls": ["https://rb.gy/hdy7fx",
+"https://rb.gy/hdy7fx",
+"https://rb.gy/hdy7fx"],
+  "rentperday": 4500,
+  "type": "Deluxe",
+  "maxcount": 2,
+  "phonenumber": 7865432109,
+  "currentbookings": [],
+  "description": "This heritage hotel was once the residence of the Bhopal royal family. It offers a luxurious experience with its opulent rooms, personalized service, and fine dining options."
+}
+,
+
+{
+  "name": "Hotel Shubham,Hanuman Colony,Guna",
+  "imageurls": ["https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/room-imgs/201807121436263734-3-b75d201ab1e211e8a2a60a50aceb1844.jpg?downsize=*:500&crop=990:500","https://tinyurl.com/59uxkupp","https://tinyurl.com/4rnczxuv"],
+  "rentperday": 1200,
+  "type": "Non-Deluxe",
+  "maxcount": 3,
+  "phonenumber": 9512345678,
+  "currentbookings": [],
+  "description": "This budget-friendly hotel offers clean and comfortable accommodations with basic amenities. It is conveniently located near the city center."
+}
+,
+
+{
+  "name": "Hotel Sai Palace in Guna HO, Guna",
+  "imageurls": ["https://images.jdmagicbox.com/comp/guna/h7/9999p7542.7542.180525123637.e9h7/catalogue/hotel-sai-palace-guna-ho-guna-hotels-rs-1001-to-rs-2000--cig00.jpg?temp=1","https://tinyurl.com/32n2376a","https://tinyurl.com/zh2ex4pk"],
+  "rentperday": 800,
+  "type": "Non-Deluxe",
+  "maxcount": 6,
+  "phonenumber": 8901234567,
+  "currentbookings": [],
+  "description": "This Hotel offers various rooms,in budget range with very good quality also offers food facility"
+},
+
+{
+  "name": "Hotel Noor-Us-Sabah Palace, Bhopal",
+  "imageurls": ["https://tinyurl.com/ez2usf9y","https://t.ly/2frQr" ],
+  "rentperday": 5500,
+  "type": "Delux",
+  "maxcount": 4,
+  "phonenumber": 7230987654,
+  "currentbookings": [],
+  "description": "This heritage hotel is a converted palace, offering a blend of old-world charm and modern amenities. It features spacious rooms with traditional décor, a swimming pool, and a restaurant serving Mughlai cuisine."
+}
+,
+{
+"name": "Hotel Royal,Zone-1,Bhopal",
+"imageurls":[
+"https://t.ly/6R3jZ",
+"https://tinyurl.com/4v7r8mtr",
+"https://tinyurl.com/ez2usf9y"],
+"rentperday":1080,
+"type":"Non-Delux",
+"maxcount":2,
+"phonenumber":9909675568,
+"currentbookings":[],
+"description": "This is the good hotel with very low cost rooms with all the facilities"
+}
+,
+
+
+{
+"name": "Shagun Hotel,Sarvodaya Chowk,Bina",
+"imageurls":[
+"https://rb.gy/q0yqsc",
+"https://rb.gy/z8wnz0",
+""],
+"rentperday":1080,
+"type":"Non-Delux",
+"maxcount":2,
+"phonenumber":9909675568,
+"currentbookings":[],
+"description": "This is the good hotel with very low cost rooms with all the facilities"
+}
+
+,
+{
+"name": "Hotel Ganpati,Zone-2,Bhopal",
+"imageurls":[
+"https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/hotelier-images/de/c5/7371526c7b35d6798ebc420990383f17cbcb9901dc709d3667181446196c.jpeg",
+"https://rb.gy/kmjyqo",
+"https://rb.gy/wbh4fr"],
+"rentperday":1080,
+"type":"Non-Delux",
+"maxcount":2,
+"phonenumber":9909675568,
+"currentbookings":[],
+"description": "This is the good hotel with very low cost rooms with all the facilities"
+}
+
+
+
+
+
+
+
+]
